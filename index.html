@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #firstinput{
+            height: 0.8cm;
+            width: 10cm;
+            padding-left: 25px;
+            font-size: larger;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        #secondinput{
+            height: 0.8cm;
+            width: 10cm;
+            padding-left: 25px;
+            font-size: larger;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        #firstinput:hover {
+            border-color: #4A90E2;
+        }
+
+        #secondinput:hover{
+            border-color: #7ED321;
+        }
+
+        .inpbtns{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #op1{
+            cursor: pointer;
+            transition: background-color 0.3s,transform 0.2s ease-in-out;
+        }
+
+        #op2{
+            cursor: pointer;
+            transition: background-color 0.3s,transform 0.2s ease-in-out;
+        }
+
+        #op3{
+            cursor: pointer;
+            transition: background-color 0.3s,transform 0.2s ease-in-out;
+        }
+
+        #op4{
+            cursor: pointer;
+            transition: background-color 0.3s,transform 0.2s ease-in-out;
+        }
+
+        #op5{
+            cursor: pointer;
+            transition: background-color 0.3s,transform 0.2s ease-in-out;
+        }
+
+        #op1:hover {
+            background-color: #C0392B;
+            transform: scale(1.2);
+        }
+
+        #op2:hover {
+            background-color: #16A085;
+            transform: scale(1.2);
+        }
+
+        #op3:hover {
+            background-color: #2980B9;
+            transform: scale(1.2);
+        }
+
+        #op4:hover {
+            background-color: #27AE60;
+            transform: scale(1.2);
+        }
+
+        #op5:hover {
+            background-color: #F1C40F;
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div style="border: 3px solid black;padding: 15px;width: 30%;border-radius:15px;box-shadow: 5px 5px 5px 5px orangered;">
+            <div style="display: flex;align-items: center;justify-content: center;">
+            <h1>Calculator</h1>
+            <img src="emoji.png" style="display: inline;width: 35px;height: 35px;margin-left: 3px;">
+            </div>
+            <input type="tel" id="firstinput" placeholder="First Input">
+            <br><br><br>
+            <input type="tel" id="secondinput" placeholder="Second Input">
+            <br><br><br>
+            <div class="inpbtns">
+            <button id="op1" style="height: 1.5cm;width: 1.3cm;background-color: #F39C12;" onclick="Addinputs()"><h2><b>+</b></h2></button>
+            <button id="op2" style="height: 1.5cm;width: 1.3cm;background-color: #E74C3C;" onclick="Subinputs()"><h2><b>-</b></h2></button>
+            <button id="op3" style="height: 1.5cm;width: 1.3cm;background-color: #1ABC9C;" onclick="Mulinputs()"><h2><b>*</b></h2></button>
+            <button id="op4" style="height: 1.5cm;width: 1.3cm;background-color: #3498DB;" onclick="Divinputs()"><h2><b>/</b></h2></button>
+            <button id="op5" style="height: 1.5cm;width: 1.3cm;background-color: #2ECC71;" onclick="Powinputs()"><h2><b>**</b></h2></button>
+            </div>
+            <h1 id="result"></h1>
+        </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
